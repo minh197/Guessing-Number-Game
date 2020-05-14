@@ -7,6 +7,7 @@ let finalresult=[];
 let time=20;
 let mytime;
 let myresult=0;
+let myround=0;
 
 function timecounting(){
   myTime = setInterval(() => {
@@ -46,11 +47,27 @@ function timeOut() {
       if(guess==ranNum){
         resultMessage="You won";
         alert("You won!")
-        time=20;
+       
         myresult+=1;
+        myround+=1;
         document.getElementById("guessBtn").disabled = true;
         
         finalresult.push(myresult);
+        if(myresult=1){
+          document.getElementById("result1").innerHTML = `${myresult}`
+          document.getElementById("round1").innerHTML = `${myround}`
+          document.getElementById("time1").innerHTML = `${time}`
+        }else if(myresult=2){
+          document.getElementById("result2").innerHTML = `${myresult}`
+          document.getElementById("round2").innerHTML = `${myround}`
+          document.getElementById("time2").innerHTML = `${time}`
+        }
+        else{
+          document.getElementById("result3").innerHTML = `${myresult}`
+          document.getElementById("round3").innerHTML = `${myround}`
+          document.getElementById("time3").innerHTML = `${time}`
+        }
+        time=20;
         
     
       }else if(guess<ranNum){
@@ -93,14 +110,15 @@ function timeOut() {
     
   }
   function reset(){
-    timeOut();
+    // timeOut();
+    time=20;
     history.length=0;
     chance=5;
     resultMessage="";
     console.log(history);
     document.getElementById("historyArea").innerHTML = `History: ${history}`
     document.getElementById('timmer').innerHTML = `Your time on this round: ${time}`
-    document.getElementById("chance-display").innerHTML = `Chance remaining: ${chance}`
+    document.getElementById("chance-display").innerHTML = `Chances remaining: ${chance}`
     document.getElementById("resultArea").innerHTML = `${resultMessage}`
   }
     

@@ -1,7 +1,18 @@
 .drinking-wrapper{
+   
     background: rgba(51, 54, 216, 0.877);
     border-radius: 15px 15px 0px 0px;
-    padding: 10px 32px 30px;
+    /* padding: 10px 32px 30px; */
+    margin: 0 auto;
+    width: 70%;
+    /* height: 400px; */
+    /* display: flex; */
+    text-align: center;
+    padding-top: 49px;
+    padding-bottom: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 #number{
     box-sizing: border-box;
@@ -54,4 +65,17 @@
 }
 p{
     font-size: 160%;
+}
+.Minh-section{
+    position:relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:100vh;
+    width:100%;
+    display:flex;
+    align-items: center;
+    background-image: url(https://thebridge.in/wp-content/uploads/2020/04/Online-Gambling-1280x720.jpg);
+}
+#timmer{
+    padding-top: 20px;
 }

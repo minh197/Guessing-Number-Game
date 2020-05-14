@@ -15,54 +15,32 @@
    
 </head>
 <body>
-    
+   <section class="Minh-section">
     <script src="main.js"></script>
+    
     <div class="drinking-wrapper">
-        
-        <h1>Number Guessing Game</h1>
+      <div class="content-wrapper">
+        <h1 style="font-size: 25px; color:red; text-align:center;">Number Guessing Game</h1>
         <p style="color:azure"id="resultArea"></p>
+        <p style="color:azure"id="notiArea"></p>
         <p style="color:azure"id="roundArea"></p>
         <p style="color:azure"class="result-display"></p>
-        <p style="color:azure"id="chance-display"></p>
+        <p style="color:azure; text-align: center; font-size: 20px"id="chance-display"></p>
         <input id="number" placeholder="Please input a number"/>
         <button id="guessBtn" onclick="guessNumber()">Guess a number!</button>
         <button id="resetBtn" onclick="reset()" >Reset!</button>
-        <h2 style="color:rgb(241, 227, 26)" id="timmer"></h2>
-        <p id="historyArea"></p>
+        <h2 style="color:rgb(241, 227, 26); font-size: 20px; text-align: center;" id="timmer"></h2>
+        <p style="color: white" id="historyArea"></p>
         <p id="resultArea"></p>
 
+      </div>
+        
        
-
+  
     </div>
-    <table class="table table-dark">
-        <thead>
-          <tr>
-            <th scope="col">Round</th>
-            <th scope="col">Result</th>
-            <th scope="col">Time</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <!-- <th scope="row">1</th> -->
-            <td id="round1"></td>
-            <td id="result1"></td>
-            <td id="time1"></td>
-          </tr>
-          <tr>
-            <!-- <th scope="row">2</th> -->
-            <td id="round2"></td>
-            <td id="result2"></td>
-            <td id="time3"></td>
-          </tr>
-          <tr>
-            <!-- <th scope="row">3</th> -->
-            <td id="round2"></td>
-            <td id="result2"></td>
-            <td id="time3"></td>
-          </tr>
-        </tbody>
-      </table>
+    
+  </section> 
+   
     <script
   src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
   integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -78,5 +56,7 @@
   integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
   crossorigin="anonymous"
 ></script>
+  
+    
 </body>
 </html>
